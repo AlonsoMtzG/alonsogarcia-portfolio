@@ -22,9 +22,6 @@
 @color-grey: #5f6c7b;
 @color-lightgrey: #e5e5e5;
 
-// Header
-@header-bg: #d1d1d1;
-
 * {
     box-sizing: border-box;
     font-family: @font, Helvetica, sans-serif;
@@ -72,18 +69,27 @@ header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 5px 60px;
     width: 100%;
     min-height: 120px;
     // background-color: $coltwo;
     background-image: linear-gradient(
         180deg,
-        @header-bg,
-        rgba(@header-bg, 0.1),
+        @color-lightgrey,
+        rgba(@color-lightgrey, 0.1),
         transparent
     );
-
     mix-blend-mode: luminosity;
+
+    font-size: 15px;
+    color: @color-secondary;
+    font-weight: @medium;
+
+    // Logo Text
+    span {
+        font-weight: @semi-bold;
+        font-size: 20px;
+    }
 
     ul {
         margin: 0;

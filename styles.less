@@ -1,0 +1,104 @@
+// - Imports -
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+//  - Vars -
+// General
+@font: 'Poppins';
+
+// Header
+@header-bg: #d1d1d1;
+
+* {
+    box-sizing: border-box;
+    font-family: @font, Helvetica, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+}
+
+main {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+    min-height: 120px;
+    font-size: 1rem;
+    // background-color: $coltwo;
+    background-image: linear-gradient(
+        180deg,
+        @header-bg,
+        rgba(@header-bg, 0.1),
+        transparent
+    );
+
+    mix-blend-mode: luminosity;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        li {
+            margin: 0 1em;
+            padding: 1em;
+
+            a {
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: red;
+
+                &::after {
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    content: '';
+                    width: 0;
+                    height: 3px;
+                    transition: all 0.2s linear;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    scroll-snap-align: center;
+    height: 25vh;
+}

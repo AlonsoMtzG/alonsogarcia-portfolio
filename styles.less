@@ -131,6 +131,87 @@ header {
     }
 }
 
+// General
+.titleContainer {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    z-index: 0;
+
+    .title {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 50px;
+        color: @color-secondary;
+    }
+
+    .dividerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 30px;
+
+        .divider {
+            background-color: @color-primary-darken-bg-white;
+            width: 100px;
+            height: 7px;
+            border-radius: 10px;
+        }
+    }
+
+    &:after {
+        font-size: 8rem;
+        font-weight: bold;
+        content: 'SecTitle';
+        position: absolute;
+        color: @color-primary-darken-bg-blue;
+        line-height: 1;
+        z-index: -1;
+        bottom: 0px;
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+// About Me
+#aboutme {
+    .titleContainer {
+        &:after {
+            content: 'Profile';
+        }
+    }
+}
+
+// Skills
+#skills {
+    .titleContainer {
+        &:after {
+            content: 'Skills';
+        }
+    }
+}
+
+// Portfolio
+#portfolio {
+    .titleContainer {
+        &:after {
+            content: 'Portfolio';
+        }
+    }
+}
+
+// Contact
+#contact {
+    .titleContainer {
+        &:after {
+            content: 'Contact';
+        }
+    }
+}
+
 footer {
     display: flex;
     align-items: center;

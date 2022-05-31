@@ -536,9 +536,42 @@ header {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     scroll-snap-align: center;
+
+    background-color: @color-primary;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
     height: 25vh;
+
+    font-size: 15px;
+    font-weight: @fw-medium;
+    color: @color-secondary;
+
+    span {
+        width: 25%;
+
+        &:last-child {
+            text-align: end;
+            font-weight: @fw-light;
+            span {
+                color: @color-primary-darken-bg-white;
+                font-weight: @fw-medium;
+            }
+        }
+    }
+
+    .icons {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        i {
+            font-size: 30px;
+            color: @color-secondary;
+        }
+    }
 }

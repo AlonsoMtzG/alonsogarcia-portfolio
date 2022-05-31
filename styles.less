@@ -375,9 +375,115 @@ header {
 
 // Portfolio
 #portfolio {
-    .titleContainer {
-        &:after {
-            content: 'Portfolio';
+    background-color: @color-primary;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .titleContainer {
+            &:after {
+                content: 'Portfolio';
+            }
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 70%;
+
+            .card {
+                background-color: white;
+                height: 100%;
+                width: 20%;
+                border-radius: 30px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .project1 {
+                    background: url(https://www.alonso-garcia.me/assets/project1-min.png)
+                        no-repeat;
+                }
+
+                .project2 {
+                    background: url(https://www.alonso-garcia.me/assets/project2-min.png)
+                        no-repeat;
+                }
+
+                .project3 {
+                    background: url(https://www.alonso-garcia.me/assets/project3-min.png)
+                        no-repeat;
+                }
+
+                .project4 {
+                    background: url(https://www.alonso-garcia.me/assets/project4-min.png)
+                        no-repeat;
+                }
+
+                .img {
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 50%;
+                    margin-bottom: 10px;
+
+                    background-size: cover;
+                    background-position: center;
+                    box-shadow: inset 0 0 30px 5px rgba(@color-lightblue, 0.4),
+                        inset 0 0 30px 90px rgba(@color-lightblue, 0.1);
+                    filter: brightness(1.1);
+                    filter: contrast(120%);
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 50%;
+
+                    .top {
+                        .title {
+                            font-size: 18px;
+                            font-weight: @fw-medium;
+                            color: @color-secondary;
+                        }
+
+                        .description {
+                            font-size: 13px;
+                            margin-top: 5px;
+                            font-weight: @fw-light;
+                            color: @color-grey;
+                        }
+                    }
+
+                    .bottom {
+                        .technologies {
+                            font-size: 11px;
+                            font-weight: @fw-light;
+                            color: @color-lightblue;
+                        }
+
+                        .links {
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            margin-top: 5px;
+                            font-weight: @fw-regular;
+                            color: @color-primary-darken-bg-white;
+
+                            a {
+                                &:first-child {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

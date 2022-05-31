@@ -72,23 +72,14 @@ section {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
+    scroll-snap-align: center;
+
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     padding: 5px 60px;
     width: 100%;
-    min-height: 120px;
-    // background-color: $coltwo;
-    background-image: linear-gradient(
-        180deg,
-        @color-lightgrey,
-        rgba(@color-lightgrey, 0.1),
-        transparent
-    );
-    mix-blend-mode: luminosity;
+    min-height: 50px;
 
     font-size: 15px;
     color: @color-secondary;

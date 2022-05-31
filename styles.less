@@ -354,10 +354,27 @@ header {
             div {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                height: 110px;
 
                 .logo {
                     margin-right: 30px;
                     height: 80px;
+                }
+
+                .react {
+                    height: 100px;
+                    margin-left: -10px;
+
+                    // Next icon
+                    & + img {
+                        margin-left: -10px;
+                    }
+                }
+
+                .nodejs {
+                    height: 160px;
+                    margin-left: -20px;
                 }
             }
         }

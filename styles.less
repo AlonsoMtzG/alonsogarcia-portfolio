@@ -262,6 +262,11 @@ header {
 
             padding: 80px 40px;
 
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+
             .content {
                 width: 100%;
                 height: 100%;
@@ -372,6 +377,11 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            animation: fadein 5s;
+            -moz-animation: fadein 5s; /* Firefox */
+            -webkit-animation: fadein 5s; /* Safari and Chrome */
+            -o-animation: fadein 5s; /* Opera */
 
             img {
                 height: 120%;
@@ -687,5 +697,43 @@ footer {
                 font-size: 35px;
             }
         }
+    }
+}
+
+// Animations
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

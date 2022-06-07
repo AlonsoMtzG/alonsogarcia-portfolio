@@ -146,6 +146,8 @@ header {
         align-items: flex-end;
         font-size: 50px;
         color: @color-secondary;
+
+        transition: all 0.3s ease-in-out;
     }
 
     .dividerContainer {
@@ -159,6 +161,8 @@ header {
             width: 100px;
             height: 7px;
             border-radius: 10px;
+
+            transition: all 0.65s ease-in-out;
         }
     }
 
@@ -174,6 +178,26 @@ header {
         display: inline-flex;
         width: 100%;
         justify-content: center;
+
+        transition: all 0.65s ease-in-out;
+    }
+
+    &:hover {
+        .title {
+            opacity: 0;
+        }
+
+        &:after {
+            font-size: 9rem;
+            color: @color-lightblue;
+        }
+
+        .dividerContainer {
+            .divider {
+                width: 90px;
+                background-color: @color-secondary;
+            }
+        }
     }
 }
 

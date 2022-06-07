@@ -273,9 +273,41 @@ header {
                     display: flex;
                     width: 10rem;
                     justify-content: space-between;
-                    i {
-                        font-size: 30px;
-                        color: @color-secondary;
+
+                    a {
+                        i {
+                            font-size: 30px;
+                            color: @color-secondary;
+
+                            transition: all 0.25s ease-in-out;
+                        }
+
+                        // GitHub
+                        &:first-child {
+                            i {
+                                &:hover {
+                                    color: #8739aa;
+                                }
+                            }
+                        }
+
+                        // LinkedIn
+                        &:nth-child(2) {
+                            i {
+                                &:hover {
+                                    color: #2e64bc;
+                                }
+                            }
+                        }
+
+                        // Instagram
+                        &:last-child {
+                            i {
+                                &:hover {
+                                    color: #d83472;
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -422,6 +422,12 @@ header {
                 .logo {
                     margin-right: 30px;
                     height: 80px;
+
+                    transition: all 0.25s ease-in-out;
+
+                    &:hover {
+                        height: 90px;
+                    }
                 }
 
                 .react {
@@ -432,11 +438,19 @@ header {
                     & + img {
                         margin-left: -10px;
                     }
+
+                    &:hover {
+                        height: 110px;
+                    }
                 }
 
                 .nodejs {
                     height: 160px;
                     margin-left: -20px;
+
+                    &:hover {
+                        height: 170px;
+                    }
                 }
             }
         }

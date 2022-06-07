@@ -106,9 +106,8 @@ header {
             a {
                 position: relative;
                 text-decoration: none;
-                text-transform: uppercase;
                 font-weight: 600;
-                color: red;
+                color: @color-secondary;
 
                 &::after {
                     position: absolute;
@@ -121,9 +120,11 @@ header {
                 }
 
                 &:hover {
+                    cursor: pointer;
                     &::after {
                         width: 100%;
-                        background-color: red;
+                        background-color: @color-primary-darken-bg-white;
+                        border-radius: 10px;
                     }
                 }
             }

@@ -524,6 +524,32 @@ header {
                 align-items: center;
                 text-align: center;
 
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    background-color: @color-primary-darken-bg-white;
+                    box-shadow: 0 0 30px -10px @color-secondary;
+
+                    .text {
+                        .top {
+                            .title,
+                            .description {
+                                color: @color-terciary;
+                            }
+                        }
+
+                        .bottom {
+                            .technologies {
+                                color: @color-secondary;
+                            }
+
+                            .links {
+                                color: @color-primary;
+                            }
+                        }
+                    }
+                }
+
                 .project1 {
                     background: url(https://www.alonso-garcia.me/assets/project1-min.png)
                         no-repeat;

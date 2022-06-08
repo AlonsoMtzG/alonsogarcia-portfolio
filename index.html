@@ -336,12 +336,43 @@
                         </div>
                     </div>
 
-                    <form>
-                        <input placeholder="Email" />
-                        <input placeholder="Name" />
-                        <input placeholder="Subject" />
-                        <textarea placeholder="Message"></textarea>
-                        <input type="submit" value="Submit form" class="btn" />
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input
+                            required
+                            type="email"
+                            placeholder="Email"
+                            id="email"
+                            name="email"
+                            maxlength="50"
+                        />
+                        <input
+                            required
+                            type="text"
+                            placeholder="Name"
+                            id="name"
+                            name="name"
+                            required
+                            minlength="4"
+                            maxlength="30"
+                        />
+                        <input
+                            required
+                            type="text"
+                            placeholder="Subject"
+                            id="subject"
+                            name="subject"
+                            minlength="3"
+                            maxlength="30"
+                        />
+                        <textarea
+                            required
+                            placeholder="Message"
+                            id="message"
+                            name="message"
+                            minlength="5"
+                            maxlength="300"
+                        ></textarea>
+                        <input type="submit" value="Send" class="btn" />
                     </form>
                 </div>
             </section>

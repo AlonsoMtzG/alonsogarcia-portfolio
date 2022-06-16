@@ -807,6 +807,22 @@ footer {
     section {
         padding: 35px 40px;
     }
+
+    #aboutme {
+        .container {
+            .content {
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    width: 100%;
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Mobile Devices
@@ -858,6 +874,17 @@ footer {
                             margin: 0;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    #aboutme {
+        .container {
+            .content {
+                text-align: center;
+                p {
+                    font-size: 17px;
                 }
             }
         }

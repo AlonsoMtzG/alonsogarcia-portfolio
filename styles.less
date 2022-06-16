@@ -95,40 +95,43 @@ header {
         font-size: 20px;
     }
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        width: 100%;
-        justify-content: center;
+    nav {
+        text-align: center;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            width: 100%;
+            justify-content: center;
 
-        li {
-            margin: 0 1em;
-            padding: 1em;
+            li {
+                margin: 0 1em;
+                padding: 1em;
 
-            a {
-                position: relative;
-                text-decoration: none;
-                font-weight: 600;
-                color: @color-secondary;
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: @color-secondary;
 
-                &::after {
-                    position: absolute;
-                    bottom: -3px;
-                    left: 0;
-                    content: '';
-                    width: 0;
-                    height: 3px;
-                    transition: all 0.3s ease-in-out;
-                }
-
-                &:hover {
-                    cursor: pointer;
                     &::after {
-                        width: 100%;
-                        background-color: @color-primary-darken-bg-white;
-                        border-radius: 10px;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0;
+                        content: '';
+                        width: 0;
+                        height: 3px;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        &::after {
+                            width: 100%;
+                            background-color: @color-primary-darken-bg-white;
+                            border-radius: 10px;
+                        }
                     }
                 }
             }
@@ -786,6 +789,17 @@ footer {
 
 // iPads, Tablets
 @media (max-width: 768px) {
+    header {
+        padding: 5px 30px;
+
+        nav {
+            ul {
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
     section {
         padding: 35px 40px;
     }
@@ -793,6 +807,19 @@ footer {
 
 // Mobile Devices
 @media (max-width: 480px) {
+    header {
+        padding: 0;
+        span {
+            display: none;
+            width: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
     #home {
         .container {
             height: 80%;

@@ -7,6 +7,12 @@
         <link rel="stylesheet/less" type="text/css" href="styles.less" />
         <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
         <title>Alonso García</title>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
@@ -207,117 +213,171 @@
                         </div>
                     </div>
 
-                    <div class="content">
-                        <div class="card">
-                            <div class="img project1"></div>
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
 
-                            <div class="text">
-                                <div class="top">
-                                    <span class="title">Feedback Channel</span>
-                                    <p class="description">
-                                        Web platform for tracking complaints and
-                                        suggestions from Amdocs employees.
-                                    </p>
-                                </div>
+                                        <div
+                                            class="card-image img project1"
+                                        ></div>
+                                    </div>
 
-                                <div class="bottom">
-                                    <span class="technologies"
-                                        >MongoDB | Express | React |
-                                        NodeJS</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="card-content">
+                                        <h2 class="name">Feedback Channel</h2>
+                                        <p class="description">
+                                            Web platform for tracking
+                                            suggestions and complaints from
+                                            Amdocs employees.
+                                        </p>
 
-                        <div class="card">
-                            <div class="img project2"></div>
-
-                            <div class="text">
-                                <div class="top">
-                                    <span class="title"
-                                        >HiTec Questionnaire</span
-                                    >
-                                    <p class="description">
-                                        Official site of the event for the new
-                                        students of Tecnológico de Monterrey,
-                                        where a questionnaire is answered and a
-                                        student group is suggested according to
-                                        the answers
-                                    </p>
-                                </div>
-
-                                <div class="bottom">
-                                    <span class="technologies"
-                                        >React | Firebase</span
-                                    >
-
-                                    <div class="links">
-                                        <a
-                                            href="https://hitec.tecoding.org"
-                                            target="_blank"
-                                            rel="noopener"
-                                            >Visit Site</a
+                                        <span class="technologies"
+                                            >MongoDB | Express | React |
+                                            NodeJS</span
                                         >
-                                        <a
-                                            href="https://github.com/TECoding/hitec-2021"
-                                            target="_blank"
-                                            rel="noopener"
-                                            >Github Repo</a
+
+                                        <div class="links">
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="disabled"
+                                                >Visit Site</a
+                                            >
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="disabled"
+                                                >Github Repo</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div
+                                            class="card-image img project2"
+                                        ></div>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="name">
+                                            HiTec Questionnaire
+                                        </h2>
+                                        <p class="description">
+                                            Official site for the Tec de
+                                            Monterrey HiTec Event, where a
+                                            questionnaire is answered and a
+                                            student group is suggested according
+                                            to the answers
+                                        </p>
+
+                                        <span class="technologies"
+                                            >React | Firebase</span
                                         >
+
+                                        <div class="links">
+                                            <a
+                                                href="https://hitec.tecoding.org"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >Visit Site</a
+                                            >
+                                            <a
+                                                href="https://github.com/TECoding/hitec-2021"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >Github Repo</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div
+                                            class="card-image img project3"
+                                        ></div>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="name">My Portfolio</h2>
+                                        <p class="description">
+                                            My web portfolio to show who I am,
+                                            what I do, the projects I have done
+                                            and the tools I have used for them.
+                                        </p>
+
+                                        <span class="technologies"
+                                            >HTML | Less CSS</span
+                                        >
+
+                                        <div class="links">
+                                            <a
+                                                href="https://alonso-garcia.me"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="disabled"
+                                                >Visit Site</a
+                                            >
+                                            <a
+                                                href="https://github.com/AlonsoMtzG/alonsogarcia-portfolio"
+                                                target="_blank"
+                                                rel="noopener"
+                                                >Github Repo</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+
+                                        <div
+                                            class="card-image img project4"
+                                        ></div>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <h2 class="name">Donations App</h2>
+                                        <p class="description">
+                                            iOS mobile application to schedule
+                                            and make donations with a rewards
+                                            system.
+                                        </p>
+
+                                        <span class="technologies"
+                                            >Swift | Firebase</span
+                                        >
+
+                                        <div class="links">
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="disabled"
+                                                >Visit Site</a
+                                            >
+                                            <a
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="disabled"
+                                                >Github Repo</a
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card">
-                            <div class="img project3"></div>
-
-                            <div class="text">
-                                <div class="top">
-                                    <span class="title">My Portfolio</span>
-                                    <p class="description">
-                                        My web portfolio to show who I am, what
-                                        I do, the projects I have done and the
-                                        tools I have used for them.
-                                    </p>
-                                </div>
-
-                                <div class="bottom">
-                                    <span class="technologies"
-                                        >HTML | Less CSS</span
-                                    >
-
-                                    <div class="links">
-                                        <a
-                                            href="https://github.com/AlonsoMtzG/alonsogarcia-portfolio"
-                                            target="_blank"
-                                            rel="noopener"
-                                            >Github Repo</a
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="img project4"></div>
-
-                            <div class="text">
-                                <div class="top">
-                                    <span class="title">Donations App</span>
-                                    <p class="description">
-                                        iOS mobile application to schedule and
-                                        make donations with a rewards system.
-                                    </p>
-                                </div>
-
-                                <div class="bottom">
-                                    <span class="technologies"
-                                        >Swift | Firebase</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -395,4 +455,10 @@
             <span> <span> Email me: </span>luisalonsomtzg@gmail.com </span>
         </footer>
     </body>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </html>

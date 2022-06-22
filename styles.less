@@ -517,6 +517,49 @@ header {
             }
         }
 
+        .info-root {
+            width: 100%;
+            height: 100%;
+            // position: absolute;
+            top: 0;
+        }
+
+        .animate__animated.animate__slideInUp {
+            --animate-duration: 0.5s;
+        }
+
+        .animate__animated.animate__slideOutDown {
+            --animate-duration: 0.5s;
+        }
+
+        .info-box {
+            color: wheat;
+            border-radius: 25px;
+            z-index: 2;
+            position: absolute;
+            background-color: #fff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 10px 14px;
+            margin: auto;
+        }
+
+        .info-box--container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .top {
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
         .slide-container {
             max-width: 1120px;
             width: 100%;
@@ -571,7 +614,7 @@ header {
             border: 4px solid #4070f4;
         }
         .name {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
             color: #333;
             margin-bottom: 10px;
@@ -586,6 +629,30 @@ header {
         .technologies {
             font-size: 12px;
             color: @color-lightblue;
+        }
+
+        .info-button {
+            border: none;
+            font-size: 16px;
+            color: #fff;
+            padding: 8px 16px;
+            background-color: @color-lightblue;
+            border-radius: 6px;
+            margin: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: @color-btn-hover;
+            }
+        }
+
+        .info-button.close {
+            background-color: #ff1c36;
+
+            &:hover {
+                background: #e41931;
+            }
         }
 
         .links {
